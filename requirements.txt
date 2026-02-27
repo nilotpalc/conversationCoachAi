@@ -1,0 +1,22 @@
+# Legacy pip fallback — project dependencies are now declared in pyproject.toml.
+# Preferred setup: use `uv` (see below).
+#
+# ── uv workflow ───────────────────────────────────────────
+#  uv venv                          # create .venv with Python 3.11+
+#  uv pip install -e .              # install runtime deps from pyproject.toml
+#  uv pip install -e ".[dev]"       # + dev tools (pytest, ruff)
+#
+# ── plain pip fallback ────────────────────────────────────
+#  python -m venv .venv
+#  .venv\Scripts\activate           # Windows
+#  pip install -e ".[dev]"
+# ─────────────────────────────────────────────────────────
+
+streamlit>=1.32
+google-generativeai>=0.5
+python-dotenv>=1.0
+pandas>=2.0
+pyyaml>=6.0
+tabulate>=0.9
+pytest>=7.0
+ruff>=0.3

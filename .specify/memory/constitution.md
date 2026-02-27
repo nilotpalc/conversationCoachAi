@@ -1,50 +1,48 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+
+# Conv.Coach Constitution
+
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Code Quality
+All code MUST adhere to established style guides, be clearly structured, and include meaningful comments where necessary. Code reviews are mandatory for all merges. Linting and static analysis tools MUST be used to enforce standards.
+*Rationale: High code quality reduces defects, improves maintainability, and ensures long-term project health.*
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Testing Standards
+Automated tests MUST be written for all features and bug fixes. Unit, integration, and end-to-end tests are required where applicable. No code may be merged without passing all relevant tests and achieving agreed coverage thresholds.
+*Rationale: Rigorous testing prevents regressions and ensures reliability for users and developers.*
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. User Experience Consistency
+All user-facing features MUST follow a unified design system and interaction patterns. Accessibility and usability standards MUST be met. Any changes to UX patterns require review and approval.
+*Rationale: Consistent UX builds user trust and reduces confusion, supporting accessibility for all users.*
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Performance Requirements
+Features MUST meet defined performance benchmarks (e.g., response times, memory usage). Performance regressions are not permitted without explicit review. Profiling and optimization are required for critical paths.
+*Rationale: Predictable performance ensures a responsive, scalable, and reliable product experience.*
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Additional Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+All dependencies MUST be approved and tracked. Security vulnerabilities MUST be remediated promptly. Compliance with relevant data protection and privacy standards is required.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+
+All work MUST follow a documented workflow: feature planning, specification, implementation, testing, and review. Pull requests MUST reference related specs and tasks. Deployment requires passing all quality gates and peer review.
+
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices. Amendments require documentation, team approval, and a migration plan if breaking changes are introduced. All PRs and reviews MUST verify compliance with these principles. Complexity must be justified. Regular compliance reviews are required.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+<!--
+Sync Impact Report
+- Version change: (none) → 1.0.0
+- Modified principles: All placeholders replaced with concrete principles (Code Quality, Testing Standards, User Experience Consistency, Performance Requirements)
+- Added sections: Additional Constraints, Development Workflow
+- Removed sections: None
+- Templates requiring updates: plan-template.md ✅, spec-template.md ✅, tasks-template.md ✅
+- Follow-up TODOs: None
+-->
+
+**Version**: 1.0.0 | **Ratified**: 2026-02-27 | **Last Amended**: 2026-02-27
