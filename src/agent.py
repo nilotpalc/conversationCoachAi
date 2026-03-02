@@ -25,7 +25,7 @@ load_dotenv()
 import src as _src_pkg
 DATA_DIR = Path(_src_pkg.__file__).parent.parent / "data"
 
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3-pro-preview")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.1-pro-preview")
 MAX_TRANSCRIPT_LENGTH = 10000
 
 CLARIFYING_QUESTION = (
