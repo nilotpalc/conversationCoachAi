@@ -21,6 +21,7 @@ tabulate = ">=0.9"
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.0"
 ruff = ">=0.3"
+ipykernel = "^7.3.0"
 
 [tool.ruff]
 line-length = 100
